@@ -7,7 +7,9 @@ Run the following command:
 cd my-app
 ng serve 
 The front end should show up like below :
-![Uploading image.png…]()
+
+![image](https://github.com/user-attachments/assets/003363ad-5303-4880-b01d-b232d2e9275e)
+
 
 # PartsUi
 
