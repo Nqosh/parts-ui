@@ -1,3 +1,14 @@
+# Setup of Devlopment Environment to run the Parts UI 
+To install the Angular CLI, open a terminal window and run the following command:
+content_copynpm install -g @angular/cli@17
+
+The Angular CLI includes a server, for you to build and serve your app locally.
+Run the following command:
+cd my-app
+ng serve 
+The front end should show up like below :
+![Uploading image.png…]()
+
 # PartsUi
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
