@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { PartListComponent } from './features/part/partlist/part-list/part-list.component';
+import { PartListComponent } from './features/part/partlist/part-list.component';
 
 @Component({
   selector: 'app-root',

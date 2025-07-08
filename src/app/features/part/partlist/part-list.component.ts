@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PartService } from '../../../../core/services/part.service';
-import { Part } from '../../../../models/part.model';
+import { PartService } from '../../../core/services/part.service';
+import { Part } from '../../../models/part.model';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
