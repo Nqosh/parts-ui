@@ -82,7 +82,6 @@ export class PartFormComponent implements OnInit {
     };
 
     if (this.isEdit) {
-      debugger;
     this.partService.update(part).subscribe({
     next: () => this.router.navigate(['/']),
     error: (err) => this.handleValidationErrors(err)

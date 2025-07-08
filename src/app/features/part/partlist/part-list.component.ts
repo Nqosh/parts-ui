@@ -23,17 +23,13 @@ export class PartListComponent implements OnInit {
     this.loadParts();
   }
 
-
   loadParts() {
-
     this.partService.getAll().subscribe({
       next: response => {
         this.parts = response;
       },
       error: error => console.log(error)
     })
-
-    //this.partService.getAll().subscribe(data => this.parts = data);
     }
 
     delete(partNumber: string) {

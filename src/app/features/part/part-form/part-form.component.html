@@ -1,7 +1,6 @@
 <div class="container mt-4">
     <h2>{{ isEditMode ? 'Edit Part' : 'Create New Part' }}</h2>
     
-    <!-- Server-side error messages -->
     <div *ngIf="serverErrors.length > 0" class="alert alert-danger">
     <ul>
     <li *ngFor="let error of serverErrors">{{ error }}</li>
@@ -9,7 +8,6 @@
     </div>
     
     <form [formGroup]="form" (ngSubmit)="submit()">
-    <!-- Part Number -->
     <div class="mb-3">
     <label for="partNumber" class="form-label">Part Number</label>
     <input
@@ -22,8 +20,6 @@
     Part Number is required.
     </div>
     </div>
-    
-    <!-- Description -->
     <div class="mb-3">
     <label for="description" class="form-label">Description</label>
     <input
@@ -35,8 +31,6 @@
     Description is required.
     </div>
     </div>
-    
-    <!-- Quantity -->
     <div class="mb-3">
     <label for="quantityOnHand" class="form-label">Quantity On Hand</label>
     <input
@@ -52,8 +46,6 @@
     Quantity cannot be negative.
     </div>
     </div>
-    
-    <!-- Location -->
     <div class="mb-3">
     <label for="locationCode" class="form-label">Location Code</label>
     <input
@@ -65,8 +57,6 @@
     Location is required.
     </div>
     </div>
-    
-    <!-- Last Stock Take -->
     <div class="mb-3">
     <label for="lastStockTake" class="form-label">Last Stock Take</label>
     <input
@@ -79,13 +69,9 @@
     Last stock take date is required.
     </div>
     </div>
-    
-    <!-- Submit Button -->
     <button type="submit" class="btn btn-primary" [disabled]="form.invalid">
     {{ isEditMode ? 'Update Part' : 'Create Part' }}
     </button>
-    
-    <!-- Cancel Button -->
     <button type="button" class="btn btn-secondary ms-2" (click)="router.navigate(['/'])">
     Cancel
     </button>
