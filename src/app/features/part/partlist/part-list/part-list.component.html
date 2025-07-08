@@ -1,0 +1,28 @@
+<h2>Parts</h2>
+<button class="btn btn-success" (click)="router.navigate(['/add'])">Add New Part</button>
+<hr>
+<table id="user" class="table table-bordered">
+<thead>
+<tr>
+<th>Part Number</th>
+<th>Description</th>
+<th>Quantity</th>
+<th>Location</th>
+<th>Last Stock Take</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr *ngFor="let part of parts">
+<td>{{part.partNumber}}</td>
+<td>{{part.description}}</td>
+<td>{{part.quantityOnHand}}</td>
+<td>{{part.locationCode}}</td>
+<td>{{part.lastStockTake | date:'shortDate'}}</td>
+<td>
+<button class="btn btn-success" (click)="router.navigate(['/edit', part.partNumber])">Edit</button> |
+<button class="btn btn-danger btn-sm" (click)="delete(part.partNumber)">Delete</button>
+</td>
+</tr>
+</tbody>
+</table>
