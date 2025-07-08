@@ -10,7 +10,6 @@ The front end should show up like below :
 
 ![image](https://github.com/user-attachments/assets/003363ad-5303-4880-b01d-b232d2e9275e)
 
-
 # PartsUi
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
