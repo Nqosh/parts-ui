@@ -17,7 +17,7 @@ import { CommonModule } from '@angular/common';
 export class PartListComponent implements OnInit {
   parts: Part[] = [];
 
-  constructor(public partService: PartService, public router: Router) {}
+  constructor(private partService: PartService, public router: Router) {}
 
   ngOnInit() {
     this.loadParts();
