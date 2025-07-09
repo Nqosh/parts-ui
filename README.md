@@ -1,4 +1,4 @@
-# Setup of Devlopment Environment to run the Parts UI 
+# Setup of Development Environment to run the Parts UI 
 To install the Angular CLI, open a terminal window and run the following command:
   - npm install -g @angular/cli@17
 
